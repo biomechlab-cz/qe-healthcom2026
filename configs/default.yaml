@@ -1,0 +1,40 @@
+# Default experiment configuration
+
+data:
+  window_sec: 30
+  overlap: 0.5
+  fs: 250
+  image_size: 32
+  channel: ECG
+
+encodings:
+  - GASF
+  - GADF
+  - QIE
+  - QIE-NLP
+  - QIE-Ent
+
+evaluation:
+  cv_folds: 5
+  cv_strategy: GroupKFold
+  group_key: subject_id
+  balance: true
+  metric: [accuracy, f1]
+
+svm:
+  kernel: rbf
+  C: 1.0
+  gamma: scale
+
+cnn:
+  epochs: 50
+  batch_size: 32
+  lr: 0.001
+  dropout: 0.3
+  scheduler: cosine
+
+hardware:
+  backend: ibm_boston
+  shots_production: 512
+  shots_fidelity: 1024
+  qubits_per_layer: 100
