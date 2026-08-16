@@ -110,11 +110,7 @@ Hardware experiments use IBM Quantum's `ibm_boston` (Heron r3, 156 qubits) via `
 ## Citation
 
 ```bibtex
-@inproceedings{hejda2026qie,
-  author    = {Hejda, Jan and Sokol, Marek and Volf, Petr and Kut\'ilek, Patrik},
-  title     = {Preliminary Analysis of Quantum Image Encoding for Enhanced Biosignal Classification},
-  year      = {2026},
-}
+Coming soon
 ```
 
 ## License
